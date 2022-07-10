@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Currency } from '../Components/Currency';
 
-export const FavCurrencyList = () => {
+export const FavCurrencyList = ({favList, removeCurrency}) => {
   return (
-    <div>FavCurrencyList</div>
+    <ul className="fav-currency-list-ul">
+        {favList.map((fav)=>{
+            return(
+                <Currency key={fav.id} id={fav.id} currencystate={fav} currencyname={fav.currencyname} currencycode={fav.currencycode} currencymid={fav.currencymid} currencyplus={false} removeCurrency={removeCurrency}/>
+            )
+        })}
+    </ul>
   )
 }
