@@ -37,7 +37,12 @@ h1{
 
 .currencies-lists{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.fav-currency-list{
+    order: -1;
 }
 
 .currency{
@@ -166,4 +171,14 @@ h1{
     background-color: hsla(0, 100%, 50%, 0.725);
     cursor: pointer;
     transform: translateX(.25rem);
+}
+
+@media screen and (min-width: 1024px) {
+    .currencies-lists{
+        flex-direction: row;
+    }
+
+    .fav-currency-list{
+        order: 2;
+    }
 }
