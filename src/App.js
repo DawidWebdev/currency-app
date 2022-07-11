@@ -42,7 +42,7 @@ const App = () => {
   }
 
   useEffect(()=>{
-    fetch('http://api.nbp.pl/api/exchangerates/tables/A/').then(
+    fetch('https://api.nbp.pl/api/exchangerates/tables/A/').then(
       response => response.json()
     ).then(
       data => {
