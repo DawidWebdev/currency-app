@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+h1{
+    color: hsl(0, 0%, 98%);
+    opacity: .7;
+}
+
+.list{
+    padding: 3rem;
+}
+
+.currency-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.currencies-lists{
+    display: flex;
+    justify-content: center;
+}
+
+.currency{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.currency:not(:first-child):after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    opacity: .15;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: -1rem;
+}
+
+.currency-mid{
+    color: hsla(130, 100%, 50%, 0.625);
+    margin: 0 1rem;
+}
+
+.currency-code{
+    font-weight: 700;
+    opacity: .5;
+    margin-left: 1rem;
+}
+
+.currency-plus{
+    background-color: hsla(130, 100%, 50%, 0.625);
+    padding: .5rem .75rem;
+    border-radius: .2rem;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.currency-plus:hover{
+    background-color: hsla(130, 100%, 50%, 1);
+    cursor: pointer;
+}
+
+.currency-minus{
+    background-color: hsla(0, 100%, 50%, 0.625);
+    padding: .5rem .75rem;
+    border-radius: .2rem;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.currency-minus:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.popup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(235, 21%, 11%);
+    width: 200px;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(170, 170, 170);
+    border-radius: 1rem;
+}
+
+.popup-text
+{
+    margin-bottom: 1.5rem;
+}
+
+.popup-cancel-button{
+    color: black;
+    font-weight: 700;
+    margin-right: .5rem;
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+.popup-cancel-button:hover{
+    padding: .6rem 1.15rem;
+    cursor: pointer;
+}
+
+.popup-delete-button{
+    color: white;
+    font-weight: 700;
+    margin-left: .5rem;
+    background-color: hsla(0, 100%, 50%, 0.825);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+.popup-delete-button:hover{
+    padding: .6rem 1.15rem;
+    cursor: pointer;
+}
+
+.currency-length{
+    color: white;
+    opacity: .3;
+}
+
+.remove-fav-button{
+    background-color: hsla(0, 100%, 50%, 0.625);
+    padding: .5rem .75rem;
+    border-radius: .2rem;
+    color: rgb(200, 200, 200);
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.remove-fav-button:hover{
+    background-color: hsla(0, 100%, 50%, 0.725);
+    cursor: pointer;
+    transform: translateX(.25rem);
+}
