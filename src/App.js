@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import { CurrencyList } from './Components/CurrencyList';
 import { FavCurrencyList } from './Components/FavCurrencyList';
+import { Popup } from './Components/Popup';
 
 const App = () => {
   const[currencyData, setCurrencyData] = useState([{}]);
@@ -54,16 +55,10 @@ const App = () => {
 
   return (
     <main>
-      <form className='currency-form' onSubmit={e=>e.preventDefault()}>
-        <input placeholder='Search for currency...' value={input} onChange={e=>{
-          setInput(e.target.value);
-        }}></input>
-      </form>
-
       <div className='currencies-lists'>
         <div className='currency-list list'>
           <h1>Currency List</h1>
-          <CurrencyList currencyList={currencyList} addCurrency={addCurrency} input={input} currencyData={currencyData}/>
+          <CurrencyList currencyList={currencyList} addCurrency={addCurrency} input={input}/>
         </div>
 
         <div className='fav-currency-list list'>

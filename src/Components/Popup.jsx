@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Popup = () => {
+export const Popup = ({setPopupVisibility, removeCurrency, currencystate}) => {
   return (
     <div className="popup">
           <div className="popup-text">Do you want to remove the currency from the list?</div>

@@ -35,13 +35,6 @@ h1{
     padding: 3rem;
 }
 
-.currency-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
 .currencies-lists{
     display: flex;
     justify-content: center;
@@ -105,13 +98,14 @@ h1{
 }
 
 .popup{
+    z-index: 999;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     background-color: hsl(235, 21%, 11%);
     width: 200px;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -127,30 +121,30 @@ h1{
 .popup-cancel-button{
     color: black;
     font-weight: 700;
+    font-size: 16px;
     margin-right: .5rem;
     background-color: white;
-    padding: .5rem 1rem;
+    padding: .65rem 1.25rem;
     border-radius: .5rem;
     transition: all .2s ease-in-out;
 }
 
 .popup-cancel-button:hover{
-    padding: .6rem 1.15rem;
     cursor: pointer;
 }
 
 .popup-delete-button{
-    color: white;
+    color: rgb(240, 240, 240);
     font-weight: 700;
+    font-size: 16px;
     margin-left: .5rem;
     background-color: hsla(0, 100%, 50%, 0.825);
-    padding: .5rem 1rem;
+    padding: .65rem 1.25rem;
     border-radius: .5rem;
     transition: all .2s ease-in-out;
 }
 
 .popup-delete-button:hover{
-    padding: .6rem 1.15rem;
     cursor: pointer;
 }
 
